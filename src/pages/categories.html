@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categorias - EcoLife</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="../../index.html">
+          <i class="fas fa-leaf me-2"></i>
+          <strong>EcoLife</strong>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">Início</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Categorias
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="categories.html?cat=roupas"
+                    >Roupas Sustentáveis</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="categories.html?cat=beleza"
+                    >Beleza Natural</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="categories.html?cat=casa"
+                    >Casa & Decoração</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="categories.html?cat=tecnologia"
+                    >Tecnologia Verde</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contato</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center">
+            <div class="search-box me-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Buscar produtos..."
+              />
+              <i class="fas fa-search"></i>
+            </div>
+            <a href="#" class="cart-icon">
+              <i class="fa s fa-shopping-cart"></i>
+              <span class="badge">3</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../../index.html">Início</a></li>
+            <li class="breadcrumb-item active">Categorias</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Categories Content -->
+    <section class="categories-content py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Filters Sidebar -->
+          <div class="col-lg-3 col-md-4">
+            <div class="filters-sidebar">
+              <h4 class="sidebar-title">Filtros</h4>
+
+              <!-- Category Filter -->
+              <div class="filter-group">
+                <h6>Categoria</h6>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="roupas"
+                    checked
+                  />
+                  <label class="form-check-label" for="roupas">
+                    Roupas Sustentáveis (24)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="beleza" />
+                  <label class="form-check-label" for="beleza">
+                    Beleza Natural (18)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="casa" />
+                  <label class="form-check-label" for="casa">
+                    Casa & Decoração (31)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="tecnologia"
+                  />
+                  <label class="form-check-label" for="tecnologia">
+                    Tecnologia Verde (12)
+                  </label>
+                </div>
+              </div>
+
+              <!-- Price Filter -->
+              <div class="filter-group">
+                <h6>Faixa de Preço</h6>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="price1" />
+                  <label class="form-check-label" for="price1">
+                    Até R$ 50
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="price2" />
+                  <label class="form-check-label" for="price2">
+                    R$ 50 - R$ 100
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="price3" />
+                  <label class="form-check-label" for="price3">
+                    R$ 100 - R$ 200
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="price4" />
+                  <label class="form-check-label" for="price4">
+                    Acima de R$ 200
+                  </label>
+                </div>
+              </div>
+
+              <!-- Brand Filter -->
+              <div class="filter-group">
+                <h6>Marca</h6>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="ecoware"
+                  />
+                  <label class="form-check-label" for="ecoware">
+                    EcoWare
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="natura" />
+                  <label class="form-check-label" for="natura"> Natura </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="patagonia"
+                  />
+                  <label class="form-check-label" for="patagonia">
+                    Patagonia
+                  </label>
+                </div>
+              </div>
+
+              <button class="btn btn-outline-primary w-100 mt-3">
+                Limpar Filtros
+              </button>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="col-lg-9 col-md-8">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h2>Roupas Sustentáveis</h2>
+              <div class="d-flex align-items-center">
+                <span class="me-3">Ordenar por:</span>
+                <select class="form-select" style="width: auto">
+                  <option>Mais Populares</option>
+                  <option>Menor Preço</option>
+                  <option>Maior Preço</option>
+                  <option>Novidades</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="products-grid">
+              <div class="card product-card h-100">
+                <img
+                  src="https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg"
+                  class="card-img-top"
+                  alt="Camiseta Orgânica"
+                />
+                <div class="card-body">
+                  <span class="badge bg-success mb-2">Novo</span>
+                  <h5 class="card-title">Camiseta Orgânica Básica</h5>
+                  <p class="card-text">100% algodão orgânico certificado</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price">R$ 89,90</span>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <span class="ms-1">(24)</span>
+                    </div>
+                  </div>
+                  <div class="mt-3">
+                    <a
+                      href="product-detail.html"
+                      class="btn btn-outline-primary me-2"
+                      >Ver Detalhes</a
+                    >
+                    <button class="btn btn-primary">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card product-card h-100">
+                <img
+                  src="https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg"
+                  class="card-img-top"
+                  alt="Jeans Reciclado"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Jeans Reciclado</h5>
+                  <p class="card-text">Feito com garrafas PET recicladas</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price">R$ 129,90</span>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <span class="ms-1">(18)</span>
+                    </div>
+                  </div>
+                  <div class="mt-3">
+                    <a
+                      href="product-detail.html"
+                      class="btn btn-outline-primary me-2"
+                      >Ver Detalhes</a
+                    >
+                    <button class="btn btn-primary">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card product-card h-100">
+                <img
+                  src="https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg"
+                  class="card-img-top"
+                  alt="Vestido Linho"
+                />
+                <div class="card-body">
+                  <span class="badge bg-warning mb-2">Desconto</span>
+                  <h5 class="card-title">Vestido de Linho</h5>
+                  <p class="card-text">Linho natural e respirável</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price">
+                      <span class="text-muted text-decoration-line-through"
+                        >R$ 179,90</span
+                      >
+                      R$ 149,90
+                    </span>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <span class="ms-1">(32)</span>
+                    </div>
+                  </div>
+                  <div class="mt-3">
+                    <a
+                      href="product-detail.html"
+                      class="btn btn-outline-primary me-2"
+                      >Ver Detalhes</a
+                    >
+                    <button class="btn btn-primary">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card product-card h-100">
+                <img
+                  src="https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg"
+                  class="card-img-top"
+                  alt="Tênis Vegano"
+                />
+                <div class="card-body">
+                  <span class="badge bg-info mb-2">Vegano</span>
+                  <h5 class="card-title">Tênis Vegano</h5>
+                  <p class="card-text">Materiais sintéticos sustentáveis</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price">R$ 199,90</span>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <span class="ms-1">(15)</span>
+                    </div>
+                  </div>
+                  <div class="mt-3">
+                    <a
+                      href="product-detail.html"
+                      class="btn btn-outline-primary me-2"
+                      >Ver Detalhes</a
+                    >
+                    <button class="btn btn-primary">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card product-card h-100">
+                <img
+                  src="https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg"
+                  class="card-img-top"
+                  alt="Blusa Bambu"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Blusa de Bambu</h5>
+                  <p class="card-text">Fibra de bambu antibacteriana</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price">R$ 119,90</span>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <span class="ms-1">(28)</span>
+                    </div>
+                  </div>
+                  <div class="mt-3">
+                    <a
+                      href="product-detail.html"
+                      class="btn btn-outline-primary me-2"
+                      >Ver Detalhes</a
+                    >
+                    <button class="btn btn-primary">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card product-card h-100">
+                <img
+                  src="https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg"
+                  class="card-img-top"
+                  alt="Jaqueta Reciclada"
+                />
+                <div class="card-body">
+                  <span class="badge bg-secondary mb-2">Limitado</span>
+                  <h5 class="card-title">Jaqueta Reciclada</h5>
+                  <p class="card-text">Material reciclado pós-consumo</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price">R$ 249,90</span>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <span class="ms-1">(21)</span>
+                    </div>
+                  </div>
+                  <div class="mt-3">
+                    <a
+                      href="product-detail.html"
+                      class="btn btn-outline-primary me-2"
+                      >Ver Detalhes</a
+                    >
+                    <button class="btn btn-primary">
+                      <i class="fas fa-cart-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav class="mt-5">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <span class="page-link">Anterior</span>
+                </li>
+                <li class="page-item active">
+                  <span class="page-link">1</span>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Próximo</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h5 class="mb-3">
+              <i class="fas fa-leaf me-2"></i>
+              EcoLife
+            </h5>
+            <p class="text-white-50">
+              Sua loja online de produtos sustentáveis. Compromisso com o meio
+              ambiente e qualidade de vida.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h6 class="mb-3">Categorias</h6>
+            <ul class="list-unstyled">
+              <li><a href="categories.html?cat=roupas">Roupas</a></li>
+              <li><a href="categories.html?cat=beleza">Beleza</a></li>
+              <li><a href="categories.html?cat=casa">Casa</a></li>
+              <li><a href="categories.html?cat=tecnologia">Tecnologia</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h6 class="mb-3">Atendimento</h6>
+            <ul class="list-unstyled">
+              <li><a href="contact.html">Contato</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Trocas e Devoluções</a></li>
+              <li><a href="#">Política de Privacidade</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h6 class="mb-3">Contato</h6>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-map-marker-alt me-2"></i> São Paulo, SP</li>
+              <li><i class="fas fa-phone me-2"></i> (11) 9999-9999</li>
+              <li>
+                <i class="fas fa-envelope me-2"></i> contato@ecolife.com.br
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="mb-0 text-white-50">
+              &copy; 2025 EcoLife. Todos os direitos reservados.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <small class="text-white-50"
+              >Certificado por órgãos ambientais</small
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
