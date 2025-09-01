@@ -245,11 +245,15 @@ body {
 /* ===== CATEGORIES GRID ===== */
 .categories-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-top: 3rem;
 }
-
+@media (max-width: 768px) {
+    .categories-grid {
+        grid-template-columns: 1fr; /* no mobile vira 1 coluna */
+    }
+}
 .category-card {
     background: white;
     border-radius: var(--border-radius);

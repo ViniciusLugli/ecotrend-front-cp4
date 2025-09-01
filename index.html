@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoLife - Produtos Sustentáveis</title>
+    <title>EcoWear - Produtos Sustentáveis</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <i class="fas fa-leaf me-2"></i>
-                <strong>EcoLife</strong>
+                <strong>EcoWear</strong>
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -34,10 +34,10 @@
                             Categorias
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="categories.html?cat=roupas">Roupas Sustentáveis</a></li>
-                            <li><a class="dropdown-item" href="categories.html?cat=beleza">Beleza Natural</a></li>
-                            <li><a class="dropdown-item" href="categories.html?cat=casa">Casa & Decoração</a></li>
-                            <li><a class="dropdown-item" href="categories.html?cat=tecnologia">Tecnologia Verde</a></li>
+                            <li><a class="dropdown-item" href="./src/pages/categories/calcados.html">Calçados</a></li>
+                            <li><a class="dropdown-item" href="./src/pages/categories/calcas.html">Calças</a></li>
+                            <li><a class="dropdown-item" href="./src/pages/categories/camisetas.html">Camisetas</a></li>
+                            <li><a class="dropdown-item" href="./src/pages/categories/jaquetas-moletons.html">Jaquetas & Moletons</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -70,7 +70,7 @@
             
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="carousel-bg" style="background-image: url('https://images.pexels.com/photos/9069345/pexels-photo-9069345.jpeg');">
+                    <div class="carousel-bg" style="background-image: url('/src/imgs/Economia-sustentavel.png');">
                         <div class="carousel-overlay">
                             <div class="container">
                                 <div class="row align-items-center min-vh-100">
@@ -81,7 +81,7 @@
                                         <p class="lead text-white mb-4">
                                             Descubra produtos eco-friendly que fazem a diferença para você e para o planeta.
                                         </p>
-                                        <a href="categories.html" class="btn btn-accent btn-lg">
+                                        <a href="#products" class="btn btn-accent btn-lg">
                                             Explorar Produtos
                                         </a>
                                     </div>
@@ -92,7 +92,7 @@
                 </div>
                 
                 <div class="carousel-item">
-                    <div class="carousel-bg" style="background-image: url('https://images.pexels.com/photos/4506270/pexels-photo-4506270.jpeg');">
+                    <div class="carousel-bg" style="background-image: url('/src/imgs/desenvolvimento-sustentavel-1.jpg');">
                         <div class="carousel-overlay">
                             <div class="container">
                                 <div class="row align-items-center min-vh-100">
@@ -103,7 +103,7 @@
                                         <p class="lead text-white mb-4">
                                             Produtos de beleza livres de crueldade e com ingredientes naturais.
                                         </p>
-                                        <a href="categories.html?cat=beleza" class="btn btn-accent btn-lg">
+                                        <a href="#products" class="btn btn-accent btn-lg">
                                             Ver Coleção
                                         </a>
                                     </div>
@@ -114,18 +114,18 @@
                 </div>
                 
                 <div class="carousel-item">
-                    <div class="carousel-bg" style="background-image: url('https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg');">
+                    <div class="carousel-bg" style="background-image: url('/src/imgs/O-Impacto-das-Tendencias-de-Moda-na-Sustentabilidade-Como-Customizar-e-Reduzir-o-Consumo.jpg');">
                         <div class="carousel-overlay">
                             <div class="container">
                                 <div class="row align-items-center min-vh-100">
                                     <div class="col-lg-6">
                                         <h1 class="display-4 fw-bold text-white mb-4">
-                                            Casa <span class="text-accent">Consciente</span>
+                                            Estilo <span class="text-accent">Consciente</span>
                                         </h1>
                                         <p class="lead text-white mb-4">
-                                            Transforme sua casa em um espaço sustentável e acolhedor.
+                                            Transforme seu estilo de maneira consciente e sustentável.
                                         </p>
-                                        <a href="categories.html?cat=casa" class="btn btn-accent btn-lg">
+                                        <a href="#products" class="btn btn-accent btn-lg">
                                             Descobrir Mais
                                         </a>
                                     </div>
@@ -146,71 +146,71 @@
     </section>
 
     <!-- Categories Section -->
-    <section class="categories-section py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Nossas Categorias</h2>
-                <p class="section-subtitle">Produtos cuidadosamente selecionados para um estilo de vida sustentável</p>
-            </div>
-            
-            <div class="categories-grid">
-                <div class="category-card">
-                    <a href="categories.html?cat=roupas" class="text-decoration-none">
-                        <div class="category-image">
-                            <img src="https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg" alt="Roupas Sustentáveis">
-                        </div>
-                        <div class="category-content">
-                            <h3>Roupas Sustentáveis</h3>
-                            <p>Moda consciente e ética</p>
-                            <span class="category-link">Ver produtos <i class="fas fa-arrow-right"></i></span>
-                        </div>
-                    </a>
-                </div>
-                
-                <div class="category-card">
-                    <a href="categories.html?cat=beleza" class="text-decoration-none">
-                        <div class="category-image">
-                            <img src="https://images.pexels.com/photos/4506270/pexels-photo-4506270.jpeg" alt="Beleza Natural">
-                        </div>
-                        <div class="category-content">
-                            <h3>Beleza Natural</h3>
-                            <p>Cosméticos livres de crueldade</p>
-                            <span class="category-link">Ver produtos <i class="fas fa-arrow-right"></i></span>
-                        </div>
-                    </a>
-                </div>
-                
-                <div class="category-card">
-                    <a href="categories.html?cat=casa" class="text-decoration-none">
-                        <div class="category-image">
-                            <img src="https://images.pexels.com/photos/6045343/pexels-photo-6045343.jpeg" alt="Casa & Decoração">
-                        </div>
-                        <div class="category-content">
-                            <h3>Casa & Decoração</h3>
-                            <p>Itens eco-friendly para seu lar</p>
-                            <span class="category-link">Ver produtos <i class="fas fa-arrow-right"></i></span>
-                        </div>
-                    </a>
-                </div>
-                
-                <div class="category-card">
-                    <a href="categories.html?cat=tecnologia" class="text-decoration-none">
-                        <div class="category-image">
-                            <img src="https://images.pexels.com/photos/669996/pexels-photo-669996.jpeg" alt="Tecnologia Verde">
-                        </div>
-                        <div class="category-content">
-                            <h3>Tecnologia Verde</h3>
-                            <p>Gadgets sustentáveis</p>
-                            <span class="category-link">Ver produtos <i class="fas fa-arrow-right"></i></span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="categories" class="categories-section py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Nossas Categorias</h2>
+      <p class="section-subtitle">Produtos cuidadosamente selecionados para um estilo de vida sustentável</p>
+    </div>
+
+    <div class="categories-grid">
+      <div class="category-card">
+        <a href="categories.html?cat=roupas" class="text-decoration-none">
+          <div class="category-image">
+            <img src="/src/imgs/shopping-territorio-do-calcado-1-.webp" alt="Roupas Sustentáveis">
+          </div>
+          <div class="category-content">
+            <h3>Calçados</h3>
+            <p>Moda consciente e ética</p>
+            <span class="category-link">Ver produtos <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="category-card">
+        <a href="categories.html?cat=beleza" class="text-decoration-none">
+          <div class="category-image">
+            <img src="/src/imgs/fundo-de-muitas-calcas-jeans-700-130554676.jpg" alt="Beleza Natural">
+          </div>
+          <div class="category-content">
+            <h3>Calças</h3>
+            <p>Cosméticos livres de crueldade</p>
+            <span class="category-link">Ver produtos <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="category-card">
+        <a href="categories.html?cat=casa" class="text-decoration-none">
+          <div class="category-image">
+            <img src="/src/imgs/kit_6_camisetas_femininas_cores_algodao_323_1_27cfb9b679f13d0fb8bc73a5b04ad192.webp" alt="Casa & Decoração">
+          </div>
+          <div class="category-content">
+            <h3>Camisetas</h3>
+            <p>Itens eco-friendly para seu lar</p>
+            <span class="category-link">Ver produtos <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="category-card">
+        <a href="categories.html?cat=tecnologia" class="text-decoration-none">
+          <div class="category-image">
+            <img src="/src/imgs/images.jpeg" alt="Tecnologia Verde">
+          </div>
+          <div class="category-content">
+            <h3>Jaquetas & Moletons</h3>
+            <p>Gadgets sustentáveis</p>
+            <span class="category-link">Ver produtos <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Featured Products -->
-    <section class="featured-products py-5 bg-light">
+    <section id="products" class="featured-products py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="section-title">Produtos em Destaque</h2>
@@ -220,68 +220,69 @@
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6">
                     <div class="card product-card h-100">
-                        <img src="https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg" class="card-img-top" alt="Camiseta Orgânica">
+                        <img src="/src/imgs/pexels-photo-1598505.webp" class="card-img-top" alt="Camiseta Orgânica">
                         <div class="card-body">
                             <span class="badge bg-success mb-2">Novo</span>
-                            <h5 class="card-title">Camiseta Orgânica</h5>
-                            <p class="card-text">100% algodão orgânico, certificado GOTS</p>
+                            <h5 class="card-title">Tênis Eco Runner</h5>
+                            <p class="card-text">Feito com 85% de materiais reciclados</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <span class="price">R$ 89,90</span>
+                                <span class="price">R$189,90</span>
+
                                 <div class="product-rating">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <span class="ms-1">(24)</span>
+                                    <span class="ms-1">(127)</span>
                                 </div>
                             </div>
-                            <a href="product-detail.html" class="btn btn-primary w-100 mt-3">Ver Detalhes</a>
+                            <a href="/src/pages/categories/calcados.html" class="btn btn-primary w-100 mt-3">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="col-lg-3 col-md-6">
                     <div class="card product-card h-100">
-                        <img src="https://images.pexels.com/photos/4506270/pexels-photo-4506270.jpeg" class="card-img-top" alt="Shampoo Natural">
+                        <img src="/src/imgs/486695-2.webp" class="card-img-top" alt="Shampoo Natural">
                         <div class="card-body">
                             <span class="badge bg-warning mb-2">Desconto</span>
-                            <h5 class="card-title">Shampoo Natural</h5>
-                            <p class="card-text">Livre de sulfatos e parabenos</p>
+                            <h5 class="card-title">Calça Masculina Eco Comfort - Verde</h5>
+                            <p class="card-text">Feito com algodão</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="price">
-                                    <span class="text-muted text-decoration-line-through">R$ 45,90</span>
-                                    R$ 35,90
+                                    <span class="text-muted text-decoration-line-through">R$ 219,90</span>
+                                    R$189,90
                                 </span>
                                 <div class="product-rating">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <span class="ms-1">(18)</span>
+                                    <i class="fas fa-star"></i>
+                                    <span class="ms-1">(127)</span>
                                 </div>
                             </div>
-                            <a href="product-detail.html" class="btn btn-primary w-100 mt-3">Ver Detalhes</a>
+                            <a href="/src/pages/categories/calcas.html" class="btn btn-primary w-100 mt-3">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="col-lg-3 col-md-6">
                     <div class="card product-card h-100">
-                        <img src="https://images.pexels.com/photos/6045343/pexels-photo-6045343.jpeg" class="card-img-top" alt="Vaso Biodegradável">
+                        <img src="/src/imgs/camiseta-ecologica-03.jpg" class="card-img-top" alt="Vaso Biodegradável">
                         <div class="card-body">
-                            <h5 class="card-title">Vaso Biodegradável</h5>
-                            <p class="card-text">Feito com fibra de coco natural</p>
+                            <h5 class="card-title">VCamiseta Linho ECO - Preta</h5>
+                            <p class="card-text">Feita de linho reciclado </p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <span class="price">R$ 24,90</span>
+                                <span class="price">R$79,90</span>
                                 <div class="product-rating">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <span class="ms-1">(32)</span>
+                                    <span class="ms-1">(203)</span>
                                 </div>
                             </div>
                             <a href="product-detail.html" class="btn btn-primary w-100 mt-3">Ver Detalhes</a>
@@ -291,20 +292,20 @@
                 
                 <div class="col-lg-3 col-md-6">
                     <div class="card product-card h-100">
-                        <img src="https://images.pexels.com/photos/669996/pexels-photo-669996.jpeg" alt="Carregador Solar">
+                        <img src="/src/imgs/Jaqueta-Verde-militar-209FW25157-3-500x750.jpg" alt="Carregador Solar">
                         <div class="card-body">
                             <span class="badge bg-info mb-2">Tendência</span>
-                            <h5 class="card-title">Carregador Solar</h5>
-                            <p class="card-text">Energia limpa para seus dispositivos</p>
+                            <h5 class="card-title">CJaqueta corta vento ECO</h5>
+                            <p class="card-text">Nylon sustentável</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <span class="price">R$ 149,90</span>
+                                <span class="price">R$149,90</span>
                                 <div class="product-rating">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <span class="ms-1">(15)</span>
+                                    <i class="fas fa-star"></i>
+                                    <span class="ms-1">(312)</span>
                                 </div>
                             </div>
                             <a href="product-detail.html" class="btn btn-primary w-100 mt-3">Ver Detalhes</a>
@@ -319,7 +320,7 @@
     <section class="values-section py-5">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="section-title">Por que Escolher a EcoLife?</h2>
+                <h2 class="section-title">Por que Escolher a EcoWear?</h2>
             </div>
             
             <div class="row g-4">
@@ -383,7 +384,7 @@
                 <div class="col-lg-4">
                     <h5 class="mb-3">
                         <i class="fas fa-leaf me-2"></i>
-                        EcoLife
+                        EcoWear
                     </h5>
                     <p class="text-white-50">
                         Sua loja online de produtos sustentáveis. Compromisso com o meio ambiente e qualidade de vida.
@@ -421,7 +422,7 @@
                     <ul class="list-unstyled">
                         <li><i class="fas fa-map-marker-alt me-2"></i> São Paulo, SP</li>
                         <li><i class="fas fa-phone me-2"></i> (11) 9999-9999</li>
-                        <li><i class="fas fa-envelope me-2"></i> contato@ecolife.com.br</li>
+                        <li><i class="fas fa-envelope me-2"></i> contato@EcoWear.com.br</li>
                     </ul>
                 </div>
             </div>
@@ -430,7 +431,7 @@
             
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p class="mb-0 text-white-50">&copy; 2025 EcoLife. Todos os direitos reservados.</p>
+                    <p class="mb-0 text-white-50">&copy; 2025 EcoWear. Todos os direitos reservados.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <img src="https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg" alt="Certificação" class="certification-badge">
